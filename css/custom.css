@@ -80,13 +80,13 @@ margin-top: 10px;
 
 .noche-header{
 	width: 100%;
-	background-color: #f73b31;
+	background-color: #f5f5f5;
 }
 .noche-header-anchor{
 	color: #350c0a !important;
 }
 .noche-header-anchor:hover{
-	color: #ffffff !important;
+	color: #e75239 !important;
 }
 .full {
 	background: url('../img/backgr.jpg') no-repeat center center fixed;
@@ -111,3 +111,91 @@ margin-top: 10px;
 	padding: 5px 40px;
 }
 
+.noche-container{
+	margin-top: 50px;
+}
+.color-line {
+	background: #f7f9fa;
+	height: 6px;
+	background-image: -webkit-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+	background-image: -moz-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+	background-image: -ms-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+	background-image: linear-gradient(to right, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
+	background-size: 100% 6px;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+}
+
+.sidebar{
+	padding: 0px !important;
+}
+#side-menu {
+	background: #f7f9fa;
+
+}
+#side-menu li {
+	border-bottom: 1px solid #e4e5e7;
+}
+#side-menu li a {
+	color: #6a6c6f;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 15px 20px;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 40px;
+	background-color: #f5f5f5;
+}
+.btn-circle {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 6px 0;
+	font-size: 12px;
+	line-height: 1.428571429;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.btn-circle.btn-lg {
+	width: 50px;
+	height: 50px;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 25px;
+}
+.centered{
+	text-align: center;
+}
+#inner {
+	float: left;
+	width: 100%;
+	position: relative;
+	min-height: 1px;
+	height: 540px;
+	overflow-y:scroll ;
+	overflow-x:hidden ;
+	padding-right: 5px;
+	padding-left: 5px;
+	background: #fff;
+	border: 5px solid rgba(0,0,0,0.5);
+	-webkit-background-clip: padding-box; /* for Safari */
+	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+}
+.noche-pic-margin{
+	margin-top: 20px;
+}
+.noche-img{
+	position: relative;
+}
+.adjust-delete{
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	cursor: pointer;
+}

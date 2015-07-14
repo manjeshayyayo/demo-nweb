@@ -1,720 +1,142 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Admin Panel</title>
-        <link rel="stylesheet" href="css/custom.css"/>
-        <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
-        <!-- <link rel="stylesheet" href="css/docs.css"/> -->
-        <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-    </head>
-    <body class="login1">
-    	<div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="row-fluid">
-        	<div class="span12">
-        <div class="navbar-header header-width">
-          <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> -->
-          <a class="navbar-brand" href="#">Admin</a>
-          <button type="button" class="btn btn-danger pull-right margRT" data-toggle="tooltip" data-placement="bottom" title="Logout" data-original-title="Tooltip on bottom">
-				  <span class="glyphicon glyphicon-off"></span>
-				</button>
-          
-        </div>
-        </div>
-        <!-- <div class="span6">
-        	<button type="button" class="btn btn-danger pull-right margRT" data-toggle="tooltip" data-original-title="Logout">
-				  <span class="glyphicon glyphicon-off"></span>
-				</button>
-        </div> -->
-        </div>
-        <!-- <div class="navbar-collapse collapse">
-               <button type="button" class="btn btn-default btn-lg" data-toggle="tooltip" data-original-title="Logout">
-				  <span class="glyphicon glyphicon-off"></span> Star
-				</button>
-             
-				
-		         
-	   </div> --><!--/.navbar-collapse -->
-      
-    </div>
-    	<!-- <div class="navbar navbar-default navbar-fixed-top">
-	     <div class="navbar-inner">
-	     	<div class="row-fluid">
-	     		<div class="span3">
-	     			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-				    		<span class="icon-th-list"></span>
-				    </a>
-	     			<div class="brand cus-brand">Admin</div>
-	     		</div>
-	     		<div class="span6">
-	     			 <div class="nav-collapse">
-        <!-- .nav 
-				        <ul class="menu nav user-menu pull-left">
-				        	<li><a href="dashboard.html">Dashboard</a></li>
-				            <li><a href="table.html">Tables</a></li>
-				            <li><a href="file.html">File Manager</a></li>
-                    	   <!--  <li><a  href="#" data-toggle="dropdown" data-target="#" title="Create Account"><i class="icon-user"></i> Account</a>
-                    		 <ul class="dropdown-menu">
-                                <li class="first leaf"><a data-toggle="modal" href="#RegLog">Create Account</a></li>
-								<li class="leaf"><a data-toggle="modal" href="#LogINN">Sign In</a></li>
-							 </ul>
-                    	    </li> 
-                    						
-				 </ul>
-				        <!-- /.nav 
-				    </div>
-	     		</div>
-	     		<div class="span3">
-	     			 <div class="topnav">
 
-				        <div class="btn-toolbar pull-right">
-				            <div class="btn-group">
-				                <a data-placement="bottom" data-original-title="Show / Hide Sidebar" data-toggle="tooltip" class="btn btn-success btn-sm" id="changeSidebarPos">
-				                    <i class="icon-resize-horizontal"></i>
-				                </a>
-				            </div>
-				            <div class="btn-group">
-				                <a data-placement="bottom" data-original-title="E-mail" data-toggle="tooltip" class="btn btn-default btn-sm">
-				                    <i class=" icon-envelope"></i>
-				                    <span class="label label-warning">5</span>
-				                </a>
-				                <a data-placement="bottom" data-original-title="Messages" href="#" data-toggle="tooltip" class="btn btn-default btn-sm">
-				                    <i class="icon-comments"></i>
-				                    <span class="label label-danger">4</span>
-				                </a>
-				            </div>
-				            
-				            <div class="btn-group">
-				                <a href="login.html" data-toggle="tooltip" data-original-title="Logout" data-placement="bottom" class="btn btn-metis-1 btn-sm">
-						  <i class="icon-off"></i>
-				                </a>
-				            </div>
-				        </div>
-				
-				
-				    </div>
-	     		</div>
-	     	</div>
-	     </div>
-	    </div>   -->
-	    
-<!-- 	XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX admin container XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    	 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Dashboard Noche</title>
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
 
-       <div class="ad-container">
-       	   <div class="row-fluid">
-       	   	   <div class="span2">
+<body>
 
-		                         <div class="list-group">
-										  <a href="#" class="list-group-item active"> Overview</a>
-										   <a href="#" class="list-group-item"><span class="glyphicon glyphicon-dashboard"></span> Dashbord</a>
-										  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-list"></span> Catogries</a>
-										  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-list-alt"></span> Product</a>
-										  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-tower"></span> Order</a>
-										  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-envelope"></span> Mail</a>
-										  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-upload"></span> PDF Upload</a>
-										  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-facetime-video"></span> Video Upload</a>
-										  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-file"></span> Report</a>
-								</div>
-       </div>
-       
-       	   	  <div class="span10">
-       	   	  	  <div id="content">
-					            
-		                    <div class="inner">
-		                    	
-<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Dashbord html part XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-                <div id="dashbord">
-		                        <div class="panel panel-default">
-		                        	<div class="panel-heading">
-		                        		<h4>Dashboard</h4>
-		                        	</div>
-		                        	<div class="panel-body">
-		                        		<ul class="thumbnails">
-									        <li class="span2">
-									          <a href="#" class="thumbnail">
-									            <img src="http://placehold.it/160x120" alt="">
-									          </a>
-									        </li>
-									        <li class="span2">
-									          <a href="#" class="thumbnail">
-									            <img src="http://placehold.it/160x120" alt="">
-									          </a>
-									        </li>
-									        <li class="span2">
-									          <a href="#" class="thumbnail">
-									            <img src="http://placehold.it/160x120" alt="">
-									          </a>
-									        </li>
-									        <li class="span2">
-									          <a href="#" class="thumbnail">
-									            <img src="http://placehold.it/160x120" alt="">
-									          </a>
-									        </li>
-									        <li class="span2">
-									          <a href="#" class="thumbnail">
-									            <img src="http://placehold.it/160x120" alt="">
-									          </a>
-									        </li>
-									        <li class="span2">
-									          <a href="#" class="thumbnail">
-									            <img src="http://placehold.it/160x120" alt="">
-									          </a>
-									        </li>
-									      </ul>
-		                        	</div>
-		                        </div>
-		                       
-		                       
-		                     <div class="row-fluid">
-		                     	<div class="span6">
-		                        <div class="panel panel-default">
-		                        	<div class="panel-heading"><h5>Overview</h5></div>
-		                        	<div class="panel-body">
-		                        		<div class="table-responsive">
-											        <table class="table table-bordered">
-											          <thead>
-											            <tr>
-											              <th>#</th>
-											              <th>Details</th>
-											              <th>Total</th>
-											              
-											            </tr>
-											          </thead>
-											          <tbody>
-											            <tr>
-											              <td>1</td>
-											              <td>Total Sales:</td>
-											              <td>0.00</td>
-											              
-											            </tr>
-											            <tr>
-											              <td>2</td>
-											              <td>Total Orders:</td>
-											              <td>0.00</td>
-											              
-											            </tr>
-											            <tr>
-											              <td>3</td>
-											              <td>No. of Customers:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>4</td>
-											              <td>Total Sales This Year:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>5</td>
-											              <td>Customers Awaiting Approval:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>6</td>
-											              <td>Reviews Awaiting Approval:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											          </tbody>
-											        </table>
-                                         </div>
-		                        	</div>
-		                        </div>
-		                        </div>
-		                        
-		                        <div class="span6">
-		                        <div class="panel panel-default">
-		                        	<div class="panel-heading"><h5>Latest 10 orders</h5></div>
-		                        	<div class="panel-body">
-		                        		<div class="table-responsive">
-											        <table class="table table-bordered">
-											          <thead>
-											            <tr>
-											              <th>#</th>
-											              <th>Order Id</th>
-											              <th>Customer</th>
-											              <th>Status</th>
-											              <th>total</th>
-											              <th>Action</th>
-											            </tr>
-											          </thead>
-											          <tbody>
-											            <tr>
-											              <td>1</td>
-											              <td>Total Sales:</td>
-											              <td>0.00</td>
-											              
-											            </tr>
-											            <tr>
-											              <td>2</td>
-											              <td>Total Orders:</td>
-											              <td>0.00</td>
-											              
-											            </tr>
-											            <tr>
-											              <td>3</td>
-											              <td>No. of Customers:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>4</td>
-											              <td>Total Sales This Year:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>5</td>
-											              <td>Customers Awaiting Approval:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>6</td>
-											              <td>Reviews Awaiting Approval:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											          </tbody>
-											        </table>
-                                         </div>
-		                        	</div>
-		                        </div>
-		                        </div>
-		                        
-		                       </div>
-		                    </div>   
-		                    
-<!-- *************************************************** start of 	                     -->
-		                    <div class="panel panel-default">
-		                        	<div class="panel-heading"><h5>Latest 10 orders</h5></div>
-		                        	<div class="panel-body">
-		                        		<div class="table-responsive">
-											        <table class="table table-bordered">
-											          <thead>
-											            <tr>
-											              <th>#</th>
-											              <th>Order Id</th>
-											              <th>Customer</th>
-											              <th>Status</th>
-											              <th>total</th>
-											              <th>Action</th>
-											            </tr>
-											          </thead>
-											          <tbody>
-											            <tr>
-											              <td>1</td>
-											              <td>Total Sales:</td>
-											              <td>0.00</td>
-											              
-											            </tr>
-											            <tr>
-											              <td>2</td>
-											              <td>Total Orders:</td>
-											              <td>0.00</td>
-											              
-											            </tr>
-											            <tr>
-											              <td>3</td>
-											              <td>No. of Customers:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>4</td>
-											              <td>Total Sales This Year:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>5</td>
-											              <td>Customers Awaiting Approval:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>6</td>
-											              <td>Reviews Awaiting Approval:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											          </tbody>
-											        </table>
-                                         </div>
-		                        	</div>
-		                        </div>
-<!--****************************************************** End of  -->
-<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX End of Dashbord html part XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+<nav class="navbar noche-header navbar-fixed-top">
 
-<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX start of catogries XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-                                <ul class="nav nav-tabs">
-								  <li class="active"><a href="#addCat" data-toggle="tab">Add Catogaries</a></li>
-								  <li><a href="#viewCat" data-toggle="tab">View Catogaries</a></li>
-								 
-								</ul>
-								<div class="tab-content">
-									<div class="tab-pane active" id="addCat">
-                                <div class="panel panel-default">
-		                        	<div class="panel-heading"><h5>Book Catogaries</h5></div>
-		                        	<div class="panel-body">
-		                        		<form action="#" class="form-horizontal" id="block-validate" novalidate="novalidate">
-		                        			      <div class="form-group">
-								                        <label class="control-label col-lg-4">Book Catogaries Name</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="bkcatgories" name="bkcatgories" class="form-control">
-								                        </div>
-								                    </div>
-								                     <div class="form-group">
-								                        <label class="control-label col-lg-4">Book Description</label>
-								                        <div class="col-lg-4">
-								                            <textarea class="form-control" id="bkdiscription" name="bkdiscription" rows="3"></textarea>
-								                        </div>
-								                    </div>
-								                    <div class="form-actions no-margin-bottom">
-								                        <input type="submit" value="Validate" class="btn btn-primary">
-								                    </div>
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand noche-header-anchor" href="#">noChe</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right noche-nav">
+				<li><a href="#" class="noche-header-anchor">Feature</a></li>
+				<li><a href="#" class="noche-header-anchor">About</a></li>
+				<li><a href="#" class="noche-header-anchor">Help</a></li>
+				<li><a href="#" class="noche-header-anchor"><span>Welcome XYZ</span><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></li>
+			</ul>
 
-                                       </form>
-		                        	</div>
-		                        </div>
-		                        </div>
-		                        <div class="tab-pane" id="viewCat">
-                             <div class="panel panel-default">
-		                        	<div class="panel-heading"><h5>Book Catagories</h5></div>
-		                        	<div class="panel-body">
-		                        		<div class="table-responsive">
-											        <table class="table table-bordered">
-											          <thead>
-											            <tr>
-											              <th>#</th>
-											              <th>Book Id</th>
-											              <th>Catogaries name</th>
-											              <th>Quantity</th>
-											              <th>Action</th>
-											            </tr>
-											          </thead>
-											          <tbody>
-											            <tr>
-											              <td>1</td>
-											              <td>Total Sales:</td>
-											              <td>0.00</td>
-											              
-											            </tr>
-											            <tr>
-											              <td>2</td>
-											              <td>Total Orders:</td>
-											              <td>0.00</td>
-											              
-											            </tr>
-											            <tr>
-											              <td>3</td>
-											              <td>No. of Customers:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>4</td>
-											              <td>Total Sales This Year:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>5</td>
-											              <td>Customers Awaiting Approval:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>6</td>
-											              <td>Reviews Awaiting Approval:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											          </tbody>
-											        </table>
-                                         </div>
-		                        	</div>
-		                        	</div>
-		                        </div>
-		                        </div>
-<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX start of catogries XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+		</div>
+	</div>
+	<div class="color-line"></div>
+</nav>
+<div class="container-fluid noche-container">
+	<div class="row">
+		<div class="col-sm-3 col-md-2 sidebar">
+			<ul class="nav nav-sidebar" id="side-menu">
+				<li class="active"><a href="#">Overview </a></li>
+				<li><a href="#" id="about"><span class="glyphicon glyphicon-picture"></span> About</a></li>
+				<li><a href="#" id="picture"><span class="glyphicon glyphicon-picture"></span> Picture</a></li>
+				<li><a href="#" id="timing"><span class="glyphicon glyphicon-picture"></span> Timing</a></li>
 
-<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX start of product XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-                                 <ul class="nav nav-tabs">
-								  <li class="active"><a href="#addProduct" data-toggle="tab">Add Product</a></li>
-								  <li><a href="#Productdetail" data-toggle="tab">View Product Details</a></li>
-								 
-								</ul>
-								<div class="tab-content">
-									<div class="tab-pane active" id="addProduct">
-                                <div class="panel panel-default">
-		                        	<div class="panel-heading"><h5>Book Products</h5></div>
-		                        	<div class="panel-body">
-		                        		<form action="#" class="form-horizontal" id="product-validate" novalidate="novalidate">
-		                        			      <div class="form-group">
-								                        <label class="control-label col-lg-4">Book Name</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="bkName" name="bkName" class="form-control">
-								                        </div>
-								                   </div>
-								                   <div class="form-group">
-								                        <label class="control-label col-lg-4">Author Name</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="atName" name="atName" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">ISBN NO</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="isbn" name="isbn" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Publisher Name</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="pubName" name="pubName" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Edition</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="edition" name="edition" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Language</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="bkLang" name="bkLang" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Pages</label>
-								                        <div class="col-lg-4">
-								                            <input type="number" id="bkPage" name="bkPage" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Length</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="bkLength" name="bkLength" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Width</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="bkWidth" name="bkWidth" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Height</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="bkHeight" name="bkHeight" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Weight</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="bkWeight" name="bkWeight" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Publication Date</label>
-								                        <div class="col-lg-4">
-								                            <input type="date" id="pubDate" name="pubDate" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Price</label>
-								                        <div class="col-lg-4">
-								                            <input type="text" id="bkPrice" name="bkPrice" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Quantity</label>
-								                        <div class="col-lg-4">
-								                            <input type="number" id="bkQuantity" name="bkQuantity" class="form-control">
-								                        </div>
-								                    </div>
-								                    <div class="form-group">
-								                        <label class="control-label col-lg-4">Quantity</label>
-								                        <div class="col-lg-4">
-								                            <input type="file" id="bkFile" name="bkFile" class="form-control">
-								                        </div>
-								                    </div>
-								                     <div class="form-group">
-								                        <label class="control-label col-lg-4">Book Description</label>
-								                        <div class="col-lg-4">
-								                            <textarea class="form-control" id="bk1discription" name="bk1discription" rows="3"></textarea>
-								                        </div>
-								                    </div>
-								                    <div class="form-actions no-margin-bottom">
-								                        <input type="submit" value="Validate" class="btn btn-primary">
-								                    </div>
+				<li><a href="#"><span class="glyphicon glyphicon-picture"></span> Menu</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-picture"></span> Entry Charges</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-picture"></span> Setting</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-picture"></span> Feedback</a></li>
 
-                                       </form>
-		                        	</div>
-		                        </div>
-		                        </div>
-		                        <div class="tab-pane" id="Productdetail">
-                             <div class="panel panel-default">
-		                        	<div class="panel-heading"><h5>Book Catagories</h5></div>
-		                        	<div class="panel-body">
-		                        		<div class="table-responsive">
-											        <table class="table table-bordered">
-											          <thead>
-											            <tr>
-											              <th>#</th>
-											              <th>Book Id</th>
-											              <th>Catogaries name</th>
-											              <th>Quantity</th>
-											              <th>Action</th>
-											            </tr>
-											          </thead>
-											          <tbody>
-											            <tr>
-											              <td>1</td>
-											              <td>Total Sales:</td>
-											              <td>0.00</td>
-											              
-											            </tr>
-											            <tr>
-											              <td>2</td>
-											              <td>Total Orders:</td>
-											              <td>0.00</td>
-											              
-											            </tr>
-											            <tr>
-											              <td>3</td>
-											              <td>No. of Customers:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>4</td>
-											              <td>Total Sales This Year:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>5</td>
-											              <td>Customers Awaiting Approval:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											            <tr>
-											              <td>6</td>
-											              <td>Reviews Awaiting Approval:</td>
-											              <td>0.00</td>
-											             
-											            </tr>
-											          </tbody>
-											        </table>
-                                         </div>
-		                        	</div>
-		                        	</div>
-		                        </div>
-		                        </div>
-<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX End of product XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
-		                    </div>
-		                    <!-- end .inner -->
-		               
-            		</div>
-       	   	  </div>
-       	   </div>
-       </div>    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.validate.js"></script>
-    <script type="text/javascript">
-    function formValidation() {
-    
-    /*----------- BEGIN validate CODE -------------------------*/
-     $('#block-validate').validate({
-        rules: {
-            bkcatgories: "required",
-            bkdiscription: "required"
-        },
-        errorClass: 'help-block',
-        errorElement: 'span',
-        highlight: function(element, errorClass, validClass) {
-            $(element).parents('.form-group').removeClass('has-success').addClass('has-error');
-        },
-        unhighlight: function(element, errorClass, validClass) {
-            $(element).parents('.form-group').removeClass('has-error').addClass('has-success');
-        }
-    });
-    /*----------- END validate CODE -------------------------*/
-   $('#product-validate').validate({
-   	   rules:{
-   	   	  bkName: "required",
-   	   	  atName: "required",
-   	   	  isbn: "required",
-   	   	  pubName: "required",
-   	   	  edition: "required",
-   	   	  bkLang: "required",
-   	   	  bkPage: {
-   	   	  	required: true,
-                number: true
-   	   	  },
-   	   	  bkLength: {
-                required: true,
-                digits: true
-            },
-   	   	  bkWidth: {
-                required: true,
-                digits: true
-            },
-   	   	  bkHeight: {
-                required: true,
-                digits: true
-            },
-   	   	  bkWeight: {
-                required: true,
-                digits: true
-            },
-   	   	  pubDate: {
-                required: true,
-                date: true
-            },
-          bkPrice: {
-                required: true,
-                digits: true
-            },
-          bkQuantity:{
-          	    required: true,
-                number: true
-          },
-          bkFile: "required",
-          bk1discription: "required"    
-   	   },
-   	   errorClass: 'help-block',
-        errorElement: 'span',
-        highlight: function(element, errorClass, validClass) {
-            $(element).parents('.form-group').removeClass('has-success').addClass('has-error');
-        },
-        unhighlight: function(element, errorClass, validClass) {
-            $(element).parents('.form-group').removeClass('has-error').addClass('has-success');
-        }
-   });
-}
- $(function() { formValidation(); });
+			</ul>
+		</div>
+		<div class="col-sm-9 col-md-10 " style="margin-top: 20px;">
+			<div id="inner">
+			<div id="noche-about">
+				<button type="button" class="btn btn-default btn-circle btn-lg pull-right"><i class="glyphicon glyphicon-pencil"></i></button>
+				<form role="form">
+					<div class="form-group">
+						<!--<label for="comment">Comment:</label>-->
+						<textarea class="form-control" rows="15" id="comment"></textarea>
+					</div>
+					<div class="centered">
+						<button type="button" class="btn btn-danger btn-lg noche-btn">Save</button>
+					</div>
+
+				</form>
+			</div>
+
+			<div id="noche-picture">
+				<div class="row noche-pic-margin">
+					<div class="col-xs-6 col-sm-3 noche-img">
+						<img data-src="holder.js/200x200/auto/sky" class="img-responsive img-thumbnail" alt="Generic placeholder thumbnail">
+						<span class="glyphicon glyphicon-remove adjust-delete"></span>
+					</div>
+					<div class="col-xs-6 col-sm-3 noche-img">
+						<img data-src="holder.js/200x200/auto/sky" class="img-responsive img-thumbnail" alt="Generic placeholder thumbnail">
+						<span class="glyphicon glyphicon-remove adjust-delete"></span>
+					</div>
+					<div class="col-xs-6 col-sm-3 noche-img">
+						<img data-src="holder.js/200x200/auto/sky" class="img-responsive img-thumbnail" alt="Generic placeholder thumbnail">
+						<span class="glyphicon glyphicon-remove adjust-delete"></span>
+					</div>
+					<div class="col-xs-6 col-sm-3 noche-img">
+						<img data-src="holder.js/200x200/auto/sky" class="img-responsive img-thumbnail" alt="Generic placeholder thumbnail">
+						<span class="glyphicon glyphicon-remove adjust-delete"></span>
+					</div>
+				</div>
+				<div class="row noche-pic-margin">
+					<div class="col-xs-6 col-sm-3 noche-img">
+						<img data-src="holder.js/200x200/auto/sky" class="img-responsive img-thumbnail" alt="Generic placeholder thumbnail">
+						<span class="glyphicon glyphicon-remove adjust-delete"></span>
+					</div>
+					<div class="col-xs-6 col-sm-3 noche-img">
+						<img data-src="holder.js/200x200/auto/sky" class="img-responsive img-thumbnail" alt="Generic placeholder thumbnail">
+						<span class="glyphicon glyphicon-remove adjust-delete"></span>
+					</div>
+					<div class="col-xs-6 col-sm-3 noche-img">
+						<img data-src="holder.js/200x200/auto/sky" class="img-responsive img-thumbnail" alt="Generic placeholder thumbnail">
+						<span class="glyphicon glyphicon-remove adjust-delete"></span>
+					</div>
+					<div class="col-xs-6 col-sm-3 noche-img">
+						<img data-src="holder.js/200x200/auto/sky" class="img-responsive img-thumbnail" alt="Generic placeholder thumbnail">
+						<span class="glyphicon glyphicon-remove adjust-delete"></span>
+					</div>
+				</div>
+				<div class="centered" style="margin-top: 20px">
+					<button type="button" class="btn btn-danger btn-lg noche-btn">Save</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="color-line"></div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$(function(){
+		$('#noche-about').css("display","block");
+		$('#noche-picture').css("display","none");
+		$('#about').click(function(){
+			$('#noche-about').css("display","block");
+			$('#noche-picture').css("display","none");
+		});
+		$('#picture').click(function(){
+			$('#noche-about').css("display","none");
+			$('#noche-picture').css("display","block");
+		});
+	});
 </script>
-
+</body>
 </html>
